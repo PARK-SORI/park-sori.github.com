@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" type="image/x-icon" href="./img/i_3.png">
+	<title>layout</title>
+	
+	<style>
+		* {margin:0; padding:0; }
+	
+		#box {width:600px; height:500px; background-color:#050; margin:0 auto;}
+		#box > div {width:100%;}
+		
+		*:foucous {background-color:#190; color:#fff;}
+		.clearfix:after {clear:both;}
+	
+/* #header------------------------------------------------------------ */
+			#header {height:100px; background-color:#f0f;}
+			#header:hover {background-color:#543;}
+		
+/* //#header--------------------------------------------------------- */
+		
+/* #section----------------------------------------------------------- */
+			#section {height:auto; background-color:#f50;}
+				#article {width:67%; height:150px; background-color:#05f; float:left;}
+				#container {width:67%; height:150px; background-color:#157;float:left;}
+				#aside {width:33%; height:300px; background-color:#afc; float:left; margin-top:-150px;}
+/* //#section-------------------------------------------------------- */
+		
+/* #footer------------------------------------------------------------ */		
+			#footer {height:100px; background-color:crimson;}
+/* //#footer-----------------------------------------------------------*/
+		
+	</style>
+</head>
+<body>
+	<div id="box" class="clearfix">
+		<div id="header"><a href="#">header</a></div><!-- //#header -->
+		<div id="section">
+			<div id="article"><a href="#">article</a></div><!-- //#article -->
+			<div id="container"><a href="#">container</a></div><!-- //#container -->
+			<div id="aside"><a href="#">aside</a></div><!-- //#aside -->
+		</div><!-- //#section -->
+		<div id="footer"><a href="#">footer</a></div><!-- //#footer -->
+	</div><!-- //#box -->
+</body>
+</html>
