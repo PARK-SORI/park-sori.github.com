@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="apple-touch-icon" href="./img/i_3.png">
+	<link rel="shortcut icon" type="image/x-icon" href="./img/i_3.png">
+	<title>yourname_official_site</title>
+<!-- style-------------------------------------------------------- -->	
+	<style>
+		* {margin:0; padding:0;}
+		#box {
+			max-width:960px; 
+			width:100%; 
+			min-width:600px; 
+			height:auto; 
+			margin:0 auto;
+		}
+		.header, .footer {
+			width:100%; 
+			height:90px; 
+			background-color:#999;
+		}
+		#poster, .story {
+			width:100%; 
+			height:1000px;
+			background-color:#af5;
+		}
+		
+/* header------------------------------------------------ */
+		.header {
+			padding-top:30px; 
+			box-sizing:border-box; 
+			margin-bottom:10px;
+		}
+			#logo {
+				width:16.979167%; 
+				height:31px; 
+				float:left;
+				background-color:#333;
+			}
+			#official_site {
+				width:41.041667%; 
+				height:31px;
+				font-size:19pt; 
+				float:left;
+				background-color:#fee;
+			}
+			#language {
+				width:24.270833%; 
+				height:31px; 
+				background-color:#986; 
+				float:right;
+			}
+				#language>ul {
+					width:100%; 
+					height:100%;
+				}
+					#language>ul>li {
+						list-style:none;
+						float:left;
+						display:inline-block;
+						width:33%;
+						height:31px;
+						background-color:#fee;
+					}
+/* //header--------------------------------------------------- */
+/* poster--------------------------------------------------- */
+		.poster {
+			background-color:#55f;
+			width:100%; 
+			height:50%;}
+		#poster1 {
+			padding-top:210px;
+			box-sizing:border-box;
+		}
+			h1 {
+				width:65.625%;
+				height:140px;
+				margin:0 auto; 
+				background-color:#fee;
+			}
+		#poster2 {
+			padding-top:90px; 
+			box-sizing:border-box;
+		}
+			h2 {
+				width:19.791667%;
+				height:100px;
+				margin:0 auto; 
+				background-color:#fee;
+			}
+			h3 {
+				width:34.375%;
+				height:45px; 
+				margin:0 auto; 
+				background-color:#fee;
+				margin-top:100px;
+			}
+/* //poster----------------------------------------------- */
+/* story----------------------------------------------- */
+		.story {
+			padding-top:58px;
+			box-sizing:border-box;
+		}
+		#story1 {
+			width:15.625%; 
+			height:45px; 
+			margin:0 auto;
+			background-color:#5ff;
+			margin-bottom:57px;
+		}
+		#story2, #story6 {
+			height:120px; 
+			width:960px;
+		}
+			#story2>div {
+				width:40.625%; 
+				height:100%; 
+				background-color:#4f7;
+				float:left;
+				display:inline-block;
+				margin:0 auto;
+			}
+			#story6>div {
+				width:32.291666%;
+				height:100%;
+				background-color:#4f7;
+				float:left;
+				display:inline-block;
+				margin:0 auto;
+			}
+		#story3, #story4, #story5, #story7, #story8 {
+			width:48.958334%; 
+			height:120px;
+			margin:0 auto; 
+			background-color:#fcc;
+		}
+/* //story----------------------------------------------- */
+/* movie--------------------------------------------- */
+		.movie {
+			width:100%; 
+			height:790; 
+			background-color:#faa;
+			padding-top:30px; 
+			padding-bottom:10px;
+			box-sizing:border-box;
+		}
+		.movie>div {
+			margin:0 auto;
+		}
+		#movie_text {
+			width:15.626%;
+			height:40px;
+			background-color:#ff3;
+		}
+		#youtube {
+			width:82.291666%; 
+			height:460px;
+			background-color:#fee;
+			margin-top:30px; 
+			margin-bottom:45px;
+		}
+		#another {
+			width:790px; 
+			height:190px;
+			background-color:#f5a;
+			padding-top:40px;
+			box-sizing:border-box;
+		}
+			#another>ul {
+				width:100%; 
+				height:100%;
+			}
+				#another>ul>li {
+					width:240px;
+					height:40px; 
+					background-color:#fee; 
+					float:left; 
+					list-style:none;
+				}
+				#another>ul>.middle {
+					margin-left:35px;
+					margin-right:35px;
+				}
+				#another>ul>.another_padding {
+					margin-top:40px;
+				}
+/* //movie----------------------------------------------- */
+/* footer----------------------------------------------- */
+		#cw_logo {
+			width:10.416667%;
+			height:90px;
+			background-color:#fff799; 
+			float:left; 
+		}
+		#cw_text {
+			width:47.5%;
+			height:30px;
+			margin-top:30px; 
+			background-color:#ffe; 
+			float:left; 
+		}
+		#mb_logo {
+			width:7.395833%; 
+			height:90px;
+			background-color:#fff799; 
+			float:left; 
+			margin-left:18px;
+		}
+		#mb_text {
+			width:32.708333%;
+			height:30px;
+			margin-top:30px; 
+			background-color:#ffe; 
+			float:left; 
+		}
+		
+/* //footer---------------------------------------------- */
+		.clearfix {clear:both;}
+	</style>
+<!-- //style------------------------------------------------------ -->	
+</head>
+<body>
+	<div id="box">
+		<div class="header">
+			<div id="logo"></div><!-- //#logo -->
+			<div id="official_site"></div><!-- //#official_site -->
+			<div id="language">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div><!-- //#language -->
+		</div><!-- //.header -->
+		<div id="poster">
+			<div class="poster" id="poster1">
+				<h1></h1>
+			</div>
+			<div class="poster" id="poster2">
+				<h2></h2>
+				<h3></h3>
+			</div>
+		</div><!-- //.poster -->
+		<div class="story">
+			<div id="story1"></div><!-- //story1 -->
+			<div id="story2">
+				<div></div>
+				<div class="story_margin"></div>
+			</div><!-- //story2 -->
+			<div id="story3"></div><!-- //story3 -->
+			<div id="story4"></div><!-- //story4 -->
+			<div id="story5"></div><!-- //story5 -->
+			<div id="story6">
+				<div></div>
+				<div class="story_margin"></div>
+				<div class="story_margin"></div>
+			</div><!-- //story6 -->
+			<div id="story7"></div><!-- //story7 -->
+			<div id="story8"></div><!-- //story8 -->
+			<br class="clearfix" />
+		</div><!-- //.story -->
+		<div class="movie">
+			<div id="movie_text"></div>
+			<div id="youtube"></div>
+			<div id="another">
+				<ul>
+					<li></li>
+					<li class="middle"></li>
+					<li></li>
+					<li class="another_padding"></li>
+					<li class="middle another_padding"></li>
+					<li class="another_padding"></li>
+				</ul>
+				<br class="clearfix" />
+				
+			</div>
+		</div><!-- //.movie -->
+		<div class="footer">
+			<div id="cw_logo"></div>
+			<div id="cw_text"></div>
+			<div id="mb_logo"></div>
+			<div id="mb_text"></div>
+		</div><!-- //.footer -->		
+	</div><!-- //#box -->
+</body>
+</html>
