@@ -12,9 +12,6 @@
 		#box {width:600px; height:500px; background-color:#050; margin:0 auto;}
 		#box > div {width:100%;}
 		
-		*:foucous {background-color:#190; color:#fff;}
-		.clearfix:after {clear:both;}
-	
 /* #header------------------------------------------------------------ */
 			#header {height:100px; background-color:#f0f;}
 			#header:hover {background-color:#543;}
@@ -32,12 +29,15 @@
 			#footer {height:100px; background-color:crimson;}
 /* //#footer-----------------------------------------------------------*/
 		
+		*:foucous {background-color:#190; color:#fff;}
+		.clearfix:after {clear:both;}
+	
 	</style>
 </head>
 <body>
-	<div id="box" class="clearfix">
+	<div id="box">
 		<div id="header"><a href="#">header</a></div><!-- //#header -->
-		<div id="section">
+		<div id="section" class="clearfix">
 			<div id="article"><a href="#">article</a></div><!-- //#article -->
 			<div id="container"><a href="#">container</a></div><!-- //#container -->
 			<div id="aside"><a href="#">aside</a></div><!-- //#aside -->
