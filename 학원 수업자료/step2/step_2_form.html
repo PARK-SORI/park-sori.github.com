@@ -6,50 +6,15 @@
 	<title>Document</title>
 <!-- style -->	
 	<style>
-		* {
-			margin:0;
-			padding:0;
-		}
-		form {
-			width:700px;
-			height: 1000px;
-			margin;0 auto;
-			border:1px solid #777;
-		}
-		fieldset {
-			width: 100%;
-			height:auto;
-			background-color: #f5f5f5;
-		}
-		.hidden {
-			font-size:0;
-			width: 0;
-			height: 0;
-			overflow:hidden;
-			display:hidden;
-		}
-		input:focus {
-			outline:2px solid #fa0;
-			outline-offset:5px
-		}
-		input:blur {
-			background-color: #fcc;
-		}
-		input[type="submit"] {
-			padding:10px;
-			background-color: #acc;
-		}
-		input[type="reset"] {
-			padding: 5px;
-			background-color: #faa;
-			border: 0;
-			cursor:zoom-out;
-		}
-		input[type="image"] {
-			width: 50px;
-			height:auto;
-			cursor:pointer;
-		}
+		* {margin:0; padding:0;}
+		form {width:700px; height: 1000px; margin;0 auto; border:1px solid #777;}
+		fieldset {width: 100%; height:auto; background-color: #f5f5f5;}
+		.hidden {font-size:0; width: 0; height: 0; overflow:hidden; display:hidden;}
+		input:focus {outline:2px solid #fa0; outline-offset:5px;}
+		input:blur {background-color: #fcc;}
+		input[type="submit"] {padding:10px; background-color: #acc;}
+		input[type="reset"] {padding: 5px; background-color: #faa; border: 0; cursor:zoom-out;}
+		input[type="image"] {width: 50px; height:auto; cursor:pointer;}
 		
 	</style>
 <!-- //style -->	
@@ -119,7 +84,8 @@
 			
 			<label for="multi_text">대화창</label>
 			<textarea name="multi_text" id="multi_text" cols="30" rows="10"></textarea>
-			<!-- 여러줄 작성 할 수 있는 형태의 입력창. 반드시, 이곳에 계약서 형태는 사용하지 말것  혹여나 사용했다면 속성으로 readonly="readonly"입력해서 수정이 불가능 하도록 처리 할것 -->
+			<!-- 여러줄 작성 할 수 있는 형태의 입력창. 반드시, 이곳에 계약서 형태는 사용하지 말것 
+			혹여나 사용했다면 속성으로 readonly="readonly"입력해서 수정이 불가능 하도록 처리 할것 -->
 			
 			<label for="multi_select">전화번호</label>
 			<select name="multi_select" id="multi_select">
