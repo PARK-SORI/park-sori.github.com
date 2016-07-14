@@ -19,8 +19,7 @@
 		:before{} : 'p:before{}' p요소의 이전에 해당하는 부분(실제 존재하는 요소가 아니고, 시각적효과)
 		:after{}  : 'p:after{}' p요소의 이후에 해당하는 부분(실제 존재하는 요소가 아니고, 시각적효과)
 		:focus{}  : 'a:focus{}' focus가 가능한 요소중(a, button, input ...) focus가 잡혔을경우
-		:blur{}   : 'a:blur{}' focus가 가능한 요소 중, focus처리가 되어 있지 않은 것
-		:checked{}: 'input:checked{}' input요소 중 type속성이 radio, checkbox처럼 선택을 할 수 있는 것들 중 선택했다면 						처리되는 기능
+		:checked{}: 'input:checked{}' input요소 중 type속성이 radio, checkbox처럼 선택을 할 수 있는 것들              중 선택했다면 처리되는 기능
 	'''html
 	<style>
 		h1:hover + nav {}
@@ -91,7 +90,7 @@
 	- visibility:visible   : 
 	
 7. font설명
-	- 속성값중에 inherif 기능은 부모태그가 어떤한 기능을 		
+	- 속성값중에 inherif 기능은 부모태그가 어떠한 기능을 했다면 그 속성을 이어받다 라는 뜻!(css에는 모두)	
   - color : 글씨색상
 	- font-size : 글씨크기
 	- font-weight : 굵기 thin > light > normal(=400) > bold(=600) > border => 100~900 
