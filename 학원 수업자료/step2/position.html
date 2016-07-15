@@ -17,6 +17,7 @@
 		a:hover {text-decoration: underline; color:#0ac;}
 		header, article, aside, nav, footer, section, hgroup, main {display:block;}
 	/* //reset css */
+		*:focus {outline: 2px solid #acf; outline-offset:3px;}
 	/* design */
 		body {height: 3000px;}
 		.container {width: 70vw; min-width: 600px; margin: 0 auto; padding: 1rem;
@@ -37,17 +38,31 @@
 	/* 포지션은 함부로 사용하는 것이 아니다!!! 한번 잘못사용하면, 모든 웹페이지가 틀어지며,
 	 하나의 수정으로인해, 추후 다른 모든것을 새로 수정해야하는 불편함이있다. 
 	 그래서 쓰는 위치(형태)가 정해져있음.  */
-	 		.add_banner {width: 20em;/* 16px*20em */ height: auto; padding: 1em; 
-	 			  				 background-color: #fac;}
+	 		.add_banner {width: 20em;/* 16px*20em */ height: 10em; padding: 1em; 
+	 			  		 background-color: #fac; position: fixed; top:50%;
+	 			  		 left:50%; z-index: 1000; margin-top:-5em; margin-left: -10em; }
 	 			.add_banner>button {width: 4em;/* 32px*/ height: 2em;/* 16px */ border:0; 
-	 			 										cursor:pointer; background-color: transparent; color:#ffd;  font-weight: bold; float:right;} 
+	 			 					cursor:pointer; background-color: transparent; color:#ffd; 
+	 			 					font-weight: bold; float:right;} 
 	 			.add_banner>h2 {color:#dfdfdf;} 
+	 		/* 사이드배너 위치하기(기본화면960px 기준) */
+	 		.side_banner {width: 8em; height: 30em;background-color: #0af; padding: 0.5em;
+	 				 box-sizing: border-box; position: fixed; left:50%; marfin-left:36vw; 
+	 				 top:5em; z-index: 500;}
+	 		.side_banner>h2 {color: #fff;}
 	/* //design */
 	</style>
 <!-- //style -->	
 </head>
 <body>
 	<div class="container">
+	<!-- 사이드배너의 코드 위치는 위에쓰기 그래야 탭누르기 좋음 -->
+		<div class="add_banner">
+			<button type="button">닫기</button>
+			<h2>광고 배너</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, accusantium!</p>
+
+		</div>
 		<h1>position 기본 이해</h1>
 		<ul>
 			<li class="base">base</li>
@@ -57,13 +72,10 @@
 			<li class="absolute">absolute</li>
 			<li class="base">base</li>
 		</ul>
+	</div>
+	<div class="side_banner">
+		<h2>side<br />banner</h2>
 
-		<div class="add_banner">
-			<button type="button">닫기</button>
-			<h2>광고 배너</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, accusantium!</p>
-
-		</div>
 	</div>
 	<script>
 		
