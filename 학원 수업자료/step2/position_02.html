@@ -5,12 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">\
 	<link rel="apple-touch-icon" href="favicon.png">
-	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/normalize.css"><!-- css normalize -->
 	<title>title_name</title>
 
 	<style>
 	.container {
-		width: 960px;
+		width: 960px; 
 		height: 100vh;
 		margin:0 auto;
 		background-color: #ccc;
@@ -54,17 +54,13 @@
 		overflow: hidden;
 		position:relative;
 	}
-	.slide_banner>ul {width: 400%; height: 450px; }
-	.slide_banner>ul>li {width: 125%; height: 450px; float:left;}
+	.slide_banner>ul {width: 400%; height: 100%; margin-left:-100%; }
+	.slide_banner>ul>li {width: 25%; height: 100%; float:left;}
 		.slide_01 {background-color: #afc;}
-		.slide_02 {background-color: #aba;}
-		.slide_03 {background-color: #afa;}
-		.slide_04 {background-color: #acc;}
-	.btn {height: 0;height: 100%;postion:absolute;top:50%; margin-top: -5rem;}
-	.btn>button {width: 1rem;height: 10rem;background-color: transparent;postion:absolute;}
-	.btn>button:hover {background-color: #fff;}
-		.left_button {left:0;}
-		.right_button {right:0;}
+		.slide_02 {background-color: #1fc;}
+		.slide_03 {background-color: #4f1;}
+		.slide_04 {background-color: #a49;}
+
 	</style>
 </head>
 <body>
@@ -72,17 +68,17 @@
 		<h1>position_banner_test</h1>
 		<div class="slide_banner">
 			<div class="btn">
-				<button class="left_button"></button>
-				<button class="right_button"></button>
-			</div>
+				<button class="left_btn"></button>
+				<button class="right_btn"></button>
+			</div><!-- //.btn -->
 			<ul>
 				<li class="slide_01">slide_01</li>
 				<li class="slide_02">slide_02</li>
 				<li class="slide_03">slide_03</li>
 				<li class="slide_04">slide_04</li>
 			</ul>
-		</div>
-	</div>	
+		</div><!-- //.slide_banner -->
+	</div><!-- //.container -->	
 	<script>
 		
 	</script>
