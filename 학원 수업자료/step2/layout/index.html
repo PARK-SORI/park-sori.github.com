@@ -23,18 +23,93 @@
 			<nav id="gnb">
 				<h2>wooyang전체메뉴</h2>
 				<ul>
-					<li class="gnb_01"><img src="./img/headBox/gnb_01.png" alt="우양메뉴"></li>
-					<li class="gnb_02"><img src="./img/headBox/gnb_02.png" alt="우양메뉴"></li>
-					<li class="gnb_03"><img src="./img/headBox/gnb_03.png" alt="우양메뉴"></li>
-					<li class="gnb_04"><img src="./img/headBox/gnb_04.png" alt="우양메뉴"></li>
-					<li class="gnb_05"><img src="./img/headBox/gnb_05.png" alt="우양메뉴"></li>
-					<li class="gnb_06"><img src="./img/headBox/gnb_06.png" alt="우양메뉴"></li>
+					<li class="gnb_01">
+						<a href="#"><img src="./img/headBox/gnb_01.png" alt="company"></a>
+					</li><!-- //.gnb01 -->
+					<li class="gnb_02">
+						<a href="#"><img src="./img/headBox/gnb_02.png" alt="store"></a>
+					</li><!-- //.gnb02 -->
+					<li class="gnb_03">
+						<a href="#"><img src="./img/headBox/gnb_03.png" alt="reservation"></a>
+					</li><!-- //.gnb03 -->
+					<li class="gnb_04">
+						<a href="#"><img src="./img/headBox/gnb_04.png" alt="news&event"></a>
+					</li><!-- //.gnb04 -->
+					<li class="gnb_05">
+						<a href="#"><img src="./img/headBox/gnb_05.png" alt="FAQ"></a>
+					</li><!-- //.gnb05 -->
+					<li class="gnb_06">
+						<a href="#"><img src="./img/headBox/gnb_06.png" alt="Q and A"></a>
+					</li><!-- //.gnb06 -->
 				</ul>
 			</nav>
+			<div class="head_bg"><!-- headBox 배경처리 --></div>
 		</header>
-		<aside id="asideBox"></aside>
-		<section id="container"></section>
-		<nav id="fnb">
+		<aside id="asideBox">
+			<h2>우양 주요 브랜드</h2>
+			<ul class="brand_main">
+				<li class="margin_01">
+					<a href="#"><img src="./img/aside/asideBox_nb_01.png" alt="우양브랜드01"></a>
+				</li>
+				<li class="margin_02">
+					<a href="#"><img src="./img/aside/asideBox_nb_02.png" alt="우양브랜드02"></a>
+				</li>
+				<li class="margin_02">
+					<a href="#"><img src="./img/aside/asideBox_nb_03.png" alt="우양브랜드03"></a>
+				</li>
+				<li>
+					<a href="#"><img src="./img/aside/asideBox_nb_04.png" alt="우양브랜드04"></a>
+				</li>
+			</ul>
+			<dl class="select_menu brand_sel_01">
+				<dt><a href="#">View more brand</a></dt>
+				<dd><a href="#">VIEW MORE BRAND</a></dd>
+				<dd><a href="#">BASSETTI</a></dd>
+				<dd><a href="#">PRATESI</a></dd>
+				<dd><a href="#">CHRISTY</a></dd>
+				<dd><a href="#">ABYSS HABIDECOR</a></dd>
+				<dd><a href="#">BOVI</a></dd>
+				<dd><a href="#">FAZZINI</a></dd>
+				<dd><a href="#">PARENTESI QUADRA</a></dd>
+				<dd><a href="#">PEREIRA DA CUNHA</a></dd>
+			</dl>
+			<dl class="select_menu brand_sel_02">
+				<dt><a href="#">Down comporter</a></dt>
+				<dd><a href="#">DOWN COMFORTER</a></dd>
+				<dd><a href="#">MOLINA</a></dd>
+				<dd><a href="#">DAUNENSTEP</a></dd>
+				<dd><a href="#">DORBENA</a></dd>
+				<dd><a href="#">TRUMINA</a></dd>
+				<dd><a href="#">DAUNY</a></dd>
+				<dd><a href="#">CINELLI</a></dd>
+			</dl>
+		</aside>
+		<section id="container">
+			<div class="product">
+			<!-- 이미지 처리하는 방법 
+			* 1. img코드로 작성하고, 넘치는 영역을 부모요소에서 overflow:hidden;
+			* 2. background-image로 css처리 (image, repeat, position) -->
+				<div class="main_product">
+					<a href="#"><img src="./img/content/content_01_big_1.png" alt="우영의 대표 상품군 설명"></a>
+				</div>
+				<div class="news_event">
+					<a href="#">
+						<span class="hidden">new and event</span><!-- 접근성 떄문에 써줘야함 -->
+					</a>
+				</div>
+				<div class="best_product">
+					<a href="#">
+						<span class="hidden">추천상품</span>
+					</a>
+				</div>
+			</div><!-- //.product -->
+			<div class="promotion">
+				<div class="reservation"></div>
+				<div class="e_shop"></div>
+				<div class="store_location"></div>
+			</div><!-- //.promotion -->
+		</section>
+		<nav id="fnb"></nav>
 		<footer id="footBox"></footer>
 	</div><!-- //.container -->
 </body>
