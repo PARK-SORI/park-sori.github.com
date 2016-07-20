@@ -12,7 +12,6 @@
 		background-color: #707070;
 		padding-top: 12px;
 		padding-bottom: 10px;
-		box-sizing:border-box;
 	}
 		#headBox>h1 img, #gnb>ul>li img  {width: 100%; height: auto;}
 	
@@ -30,21 +29,6 @@
 			#gnb>ul>li.gnb_06 {width:28px;margin-right:0px;}
 			#gnb>ul>a {width: 100%; height: 100%; display:block;}
 				
-/* .head_bg:배경이미지처리; */
-	/* IE를 제외한 브라우저 .head_bg {width: 100vw; height: 40px; background-color: inherit;} */
-	/* IE는 버전에 따라 적용 안됨 .head_bg {width: 100%; height: 40px; background-color: #afc; position:absolute; top:0; left:0; z-index: -100;} */  
-	/* before를 쓰나 after를 쓰나 여기서는같다. 요즘 추세 */
-	#headBox:after {
-		content:""; 
-		display:block;
-		width: 100vw;
-		height:inherit; 
-		background-color: inherit;
-		position:absolute; top:0;
-		left:50%; 
-		margin-left:-50vw;
-		z-index: -100;
-	}	
 /* #asideBox */
 	#asideBox {
 		padding-top: 20px;
@@ -55,7 +39,6 @@
 		box-sizing:border-box;
 		margin-bottom:20px; 
 	}
-	
 		.brand_main {
 			width: 703px; 
 			height: 40px; 
@@ -94,92 +77,88 @@
 		margin-bottom:20px;
 		width: 1004px;
 	}
+
 	.product {width:inherit; height:460px; margin-bottom:8px;}
 		.main_product {width: 668px; height: 460px; float: left; }
-		.main_product>a {
-			width: 100%; 
-			height: 100%; 
-			display: block; 
-			background-image: url("../img/content/content_01_big_1.png");
-			background-repeat: no-repeat;
-			background-position: center;
-		}
+		.main_product>a {background-image: url("../img/content/content_01_big_1.png");}
 
 		.news_event {width: 330px; height: 196px; margin-bottom: 8px; float:right;}
-		.news_event>a {
-			width: 100%; 
-			height: 100%; 
-			display: block; 
-			background-image: url("../img/content/content_02_small_1.png");
-			/* img코드는 src로 불러오지만, background-image는 url로 불러온다 */
-			background-repeat: no-repeat;
-			background-position: center;
-		}
+		.news_event>a {background-image: url("../img/content/content_02_small_1.png");}
+		/* img코드는 src로 불러오지만, background-image는 url로 불러온다 */
 		.best_product {
 			width: 330px;
 			height: 256px;
 			float:right;
-
 		}
-		.best_product>a {
-			width: 100%; 
-			height: 100%; 
-			display: block; 
-			background-image: url("../img/content/content_03_small_2.png"); 
-			background-repeat: no-repeat;
-			background-position: center;
-		}
+		.best_product>a {background-image: url("../img/content/content_03_small_2.png");}
 	.promotion {width:inherit; height:280px;}
-	
 		.reservation {
 			width: 332px; 
 			height: 148px; 
 			margin-bottom: 8px; 
-			float: left;
 		}
-		.reservation>a {
-			width: 100%; 
-			height: 100%;
-			display: block;
-			background-image: url("../img/content/content_04_small_3.png");
-			background-repeat: no-repeat;
-			background-position: center;
-		}
+		.reservation>a {background-image: url("../img/content/content_04_small_3.png");}
 		.e_shop {
 			width:332px; 
 			height:124px; 
-			float:left;
-
 		}
-		.e_shop>a {
-			width: 100%; 
-			height: 100%;
-			display: block; 
-			background-image: url("../img/content/content_05_small_4.png");
-			background-repeat: no-repeat;
-			background-position: center;
-		}
+		.e_shop>a {background-image: url("../img/content/content_05_small_4.png");}
 		.store_location {
 			width: 670px; 
 			height: 280px;
 			float:right;
+			margin-top:-280px;
 		}
-		.store_location>a {
-			width: 100%; 
-			height: 100%;
-			display: block; 
-			background-image: url("../img/content/content_06_big_2.png");
-			background-repeat: no-repeat;
-			background-position: center;
-		}
+		.store_location>a {background-image: url("../img/content/content_06_big_2.png");}
 
 /* #fnb */
 	#fnb {
 		height:276px;
 		background-color: #e8e8e8;
 	}
+
 /* #footBox */
 	#footBox {
 		height:80px;
 		background-color: #707070;
+		padding-top:12px;
+		padding-bottom:11px;
 	}
+		#footBox>h2 {
+			width: 90px;
+			height: 56px;
+			background-image: url("../img/footer/footBox_01.png");
+			background-repeat: no-repeat;
+			float: left;
+		}
+		#footBox>address {
+			width: 880px;
+			height: 100%;
+			color:#fff;
+			font-style:normal;/* 기본형으로 바꿔라*(italic을 기본으로) */
+			font-size:1em;
+			margin-left:34px;
+			margin-top:7px;
+			float:left;
+		}
+		#footBox>address>p {
+			line-height:1.5626em;/* 25px *//* font관련된건 px안쓰는게 좋다 */
+			line-height: 25px;/* IE하위버전은 em이 안먹어서 px로 두번줘야한다.*/
+			float:left;
+		}
+		#footBox>address>p:first-child {
+			margin-right: 1em;
+			letter-spacing: -0.0625em;/* 1px */
+		}
+		#footBox>address>p>a {
+			color:inherit;
+			border-right:1px solid #fff;
+		}
+		#footBox>address>p>a:hover {
+			font-weight: normal;
+			text-decoration: underline;
+		}/* :last-child보단 앞에와야함 */
+		#footBox>address>p>a:last-child {
+			border-right:0;
+			padding-right:0; 
+		}

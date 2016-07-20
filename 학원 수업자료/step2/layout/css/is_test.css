@@ -35,15 +35,42 @@ ul:after {
 }
 .is_01 {background-position:-350px -125px;
 }/* 기준이 왼쪽위에기 때문에 음수값을 줘서 떙겨줘야 원하는 아이콘이 나옴*/
-.is_02 {background-position:-110px 0;}
-.is_03 {background-position:-465px -125px;}
-.is_04 {background-position:-695px -245px;}
-.is_05 {background-position:-695px -385px;}
-.is_06 {background-position:0 -125px;}
-.is_07 {background-position:-585px 0;}
-.is_08 {background-position:-465px -245px;}
-.is_08:hover {background-position:-465px -385px;}
-.is_09 {background-position:-350px -245px;}
-.is_09:hover {background-position:-350px -385px;}
-.is_10 {background-position:-230px -245px;} 
-.is_10:hover {background-position:-230px -125px;} 
+.is_02 {
+	background-position:-110px right;
+}/* 섞어써도 된다 */
+.is_03 {
+	background-position:-465px -125px;
+}
+.is_04 {
+	background-position:-695px -245px;
+}
+.is_05 {
+	background-position:right bottom;
+}
+.is_06 {
+	background-position:0 -125px;
+}
+.is_07 {
+	background-position:-585px 0;
+}
+.is_08 {
+	background-position:-465px -245px;
+}
+.is_08:hover {
+	background-position:-465px -385px;
+	transition: all 1s;
+}
+.is_09 {
+	background-position:-350px -245px;
+}
+.is_09:hover {
+	background-position:center bottom;
+	transition: all 1s ease-in;
+}
+.is_10 {
+	background-position:-230px -245px;
+	transition: all 1s ease-out;
+} 
+.is_10:hover {
+	background-position:-230px -125px;
+} 
