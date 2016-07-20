@@ -1,0 +1,49 @@
+/* is_test.css */
+.container {
+	width: 500px;
+	height: auto;
+	margin: 0 auto;
+}
+h1 {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	line-height: 1.3;/*단위를 안쓰면 em으로 먹음*/
+	font-size:1.7em;
+	border-bottom: 1px solid #0af;
+	margin-bottom: 0.5em;
+}
+.container>ul {
+	width: 90%;
+	height: auto;
+	margin-left: 5%;
+	background-color: #ccc;
+}
+ul:after {
+	display:block;
+}
+.container>ul>li {
+	width: 120px;
+	height: 120px;
+	margin: 5px;
+	float:left;
+	box-sizing: border-box;
+	border:1px solid #777;
+	padding: 0.3em;
+	background-image:url("../img/is.png");
+	backgrond-repeat:no-repeat;
+}
+.is_01 {background-position:-350px -125px;
+}/* 기준이 왼쪽위에기 때문에 음수값을 줘서 떙겨줘야 원하는 아이콘이 나옴*/
+.is_02 {background-position:-110px 0;}
+.is_03 {background-position:-465px -125px;}
+.is_04 {background-position:-695px -245px;}
+.is_05 {background-position:-695px -385px;}
+.is_06 {background-position:0 -125px;}
+.is_07 {background-position:-585px 0;}
+.is_08 {background-position:-465px -245px;}
+.is_08:hover {background-position:-465px -385px;}
+.is_09 {background-position:-350px -245px;}
+.is_09:hover {background-position:-350px -385px;}
+.is_10 {background-position:-230px -245px;} 
+.is_10:hover {background-position:-230px -125px;} 
