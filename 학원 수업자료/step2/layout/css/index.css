@@ -1,5 +1,5 @@
 .container {
-	width: 1000px; 
+	width: 1004px; 
 	height: auto;
 	margin:0 auto;
 }
@@ -62,10 +62,10 @@
 			margin-top: 15px; 
 			float:left; 
 		}
-			#asideBox>ul>li {height:auto; float:left; }
-			.margin_01 {margin-right:75px;}
-			.margin_02 {margin-right:77px;}
-			/*#asideBox>ul>li:last-child {margin-right:0;}*/
+		#asideBox>ul>li {height:auto; float:left; }
+		.margin_01 {margin-right:75px;}
+		.margin_02 {margin-right:77px;}
+		/*#asideBox>ul>li:last-child {margin-right:0;}*/
 		/* text-indent는 첫줄 들여쓰기이다.그래서 여러줄일땐 오른쪽으로 계속 늘여쓴다. 
 		line-height는 줄간격, 한줄일경우 박스의 높이값을 주면 가운데로 배치 */
 		.select_menu {
@@ -79,6 +79,8 @@
 			background-color: #fff;
 		}
 		.brand_sel_01 {margin-bottom: 5px; position:relative; z-index: 100;}
+		.brand_sel_02 {position:relative; z-index: 50;}
+		
 		.select_menu>dt {width: 100%; height: 100%; text-transform: uppercase; font-weight: bold;}
 		.select_menu>dd {width: 100%; height: 100%; background-color: #fff; display:none; 
 			border:inherit; margin-top: 0; box-sizing: border-box;}
@@ -88,39 +90,88 @@
 		
 /* #container */
 	#container {
-		height:750px;
+		height:748px;
 		margin-bottom:20px;
+		width: 1004px;
 	}
-	.product {width:1004px; height:auto; margin-bottom:10px;}
-		.main_product {width: 668px; height: 460px; float: left; overflow: hidden;}
+	.product {width:inherit; height:460px; margin-bottom:8px;}
+		.main_product {width: 668px; height: 460px; float: left; }
+		.main_product>a {
+			width: 100%; 
+			height: 100%; 
+			display: block; 
+			background-image: url("../img/content/content_01_big_1.png");
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
 		.news_event {width: 330px; height: 196px; margin-bottom: 8px; float:right;}
-			.news_event>a {
-				width: 100%; 
-				height: 100%; 
-				display: block; 
-				background-image: url("../img/content/content_02_small_1.png");
-				/* img코드는 src로 불러오지만, background-image는 url로 불러온다 */
-				background-repeat: no-repeat;
-				background-position: center;
-			}
+		.news_event>a {
+			width: 100%; 
+			height: 100%; 
+			display: block; 
+			background-image: url("../img/content/content_02_small_1.png");
+			/* img코드는 src로 불러오지만, background-image는 url로 불러온다 */
+			background-repeat: no-repeat;
+			background-position: center;
+		}
 		.best_product {
 			width: 330px;
 			height: 256px;
 			float:right;
+
 		}
-			.best_product>a {
-				width: 100%; 
-				height: 100%; 
-				display: block; 
-				background-image: url("../img/content/content_03_small_2.png");
-				/* img코드는 src로 불러오지만, background-image는 url로 불러온다 */
-				background-repeat: no-repeat;
-				background-position: center;
-			}
-	.promotion {width:1004px; height:auto;}
-		.reservation {width: 332px; height: 148px; margin-bottom: 8px; float:left;}
-		.e_shop {width: 332px; height: 124px; float:left;}
-		.store_location {width: 670px; height: 280px;float:right;}
+		.best_product>a {
+			width: 100%; 
+			height: 100%; 
+			display: block; 
+			background-image: url("../img/content/content_03_small_2.png"); 
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	.promotion {width:inherit; height:280px;}
+	
+		.reservation {
+			width: 332px; 
+			height: 148px; 
+			margin-bottom: 8px; 
+			float: left;
+		}
+		.reservation>a {
+			width: 100%; 
+			height: 100%;
+			display: block;
+			background-image: url("../img/content/content_04_small_3.png");
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.e_shop {
+			width:332px; 
+			height:124px; 
+			float:left;
+
+		}
+		.e_shop>a {
+			width: 100%; 
+			height: 100%;
+			display: block; 
+			background-image: url("../img/content/content_05_small_4.png");
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.store_location {
+			width: 670px; 
+			height: 280px;
+			float:right;
+		}
+		.store_location>a {
+			width: 100%; 
+			height: 100%;
+			display: block; 
+			background-image: url("../img/content/content_06_big_2.png");
+			background-repeat: no-repeat;
+			background-position: center;
+		}
 
 /* #fnb */
 	#fnb {

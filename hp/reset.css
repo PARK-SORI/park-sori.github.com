@@ -1,0 +1,36 @@
+/* reset.css */
+
+html, body {
+	margin:0;
+	padding:0; 
+	border:0;
+}
+
+h1,h2,h3,h4,h5,h6,p,div,table,tr,th,td,ul,ol,li,dl,dt,dd {
+	margin:0; 
+	padding:0; 
+	font:inherit; 
+}
+
+ul,ol,li {
+	list-style:none; 
+	font:inherit;
+}
+
+a:focus {
+	outline:1px solid #05f; 
+	box-sizing:border-box;
+}
+
+/* html5 */
+header,footer,aside,article,section,nav {
+	display:block;
+}
+
+/* mysetting */
+h2,h3,h4,h5,h6,.hidden {
+	width:0; 
+	height:0;
+	overflow:hidden;
+	display:block;
+}

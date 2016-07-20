@@ -1,0 +1,31 @@
+/* index.css */
+#container {
+	width:1184px; 
+	height:auto; 
+	margin:0 auto;
+}
+#container>* {width:inherit;}
+/* #headBox */
+#headBox {
+	height:96px; 
+	background-color: #fff;
+	padding-top:30px;
+	box-sizing:border-box;
+}
+		#headBox>h1 {float:left;height:38px;width:626px;}
+				#headBox>h1>a>img {width: 100%;	height: 100%;	}
+		#headBox>ul {float:right;width:auto;height:38px;}
+				#headBox>ul>li {float:left;margin-right:34px; height:inherit;}
+						#lan_korean {width: 96px;	}
+						#lan_english {width: 70px;	}
+						#lan_japanese {width: 100px;	}
+						#lan_japanese:last-child {margin-right:0;	}
+
+/* #sectionBox */
+#sectionBox {
+	height:1540px;
+	background-image:url("./sectionBox/section_poster.png");
+	background-repeat:no-repeat;
+	background-position:center;
+}
+		
