@@ -5,7 +5,15 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<link rel="stylesheet" href="./css/myReset.css">
-	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="./css/index.css"> -->
+	<link rel="stylesheet" href="./css/all/container.css">
+	<link rel="stylesheet" href="./css/all/headBox.css">
+	<link rel="stylesheet" href="./css/all/footBox.css">
+	<link rel="stylesheet" href="./css/index/index_asideBox.css">
+	<link rel="stylesheet" href="./css/index/index_container.css">
+	<link rel="stylesheet" href="./css/index/index_fnb.css">
+	
 
 	<title>wooyang</title>
 
@@ -19,7 +27,7 @@
 		<header id="headBox" class="back_line"  role="banner";>
 		<!-- role도 접근성땜에 써줘야함 -->
 			<h1><a href="index.html"><img src="./img/headBox/logo_wooyang.png" alt="우양알앤비" title="우양비앤비"></a></h1>
-			<nav id="gnb">
+			<nav id="gnb" role="navigation">
 				<h2>wooyang전체메뉴</h2>
 				<ul>
 					<li class="gnb_01">
@@ -44,6 +52,7 @@
 			</nav>
 			<div class="head_bg"><!-- headBox 배경처리 --></div>
 		</header>
+
 		<aside id="asideBox">
 			<h2>우양 주요 브랜드</h2>
 			<ul class="brand_main">
@@ -83,6 +92,7 @@
 				<dd><a href="#">CINELLI</a></dd>
 			</dl>
 		</aside>
+
 		<section id="container">
 			<div class="product link">
 				<!-- 이미지 처리하는 방법 
@@ -110,7 +120,75 @@
 				</div><!-- //.store_location -->
 			</div><!-- //.promotion -->
 		</section>
-		<nav id="fnb" class="back_line"></nav>
+
+		<nav id="fnb" class="back_line" role="">
+			<h2>family navigation</h2>
+
+			<div class="company_store fnb_area">
+				<div class="company">
+					<h3>company</h3>
+					<ul>
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">연혁</a></li>
+						<li><a href="#">찾아오시는길</a></li>
+					</ul>
+				</div>
+				<div class="store">
+					<h3>store</h3>
+					<ul>
+						<li><a href="#">매장안내</a></li>
+						<li><a href="#">전시장예약</a></li>
+					</ul>
+				</div>
+			</div><!-- //.company_store -->
+
+			<div class="com_product fnb_area">
+				<div class="community">
+					<h3>community</h3>
+					<ul>
+						<li><a href="#">news &amp; event</a></li>
+						<li><a href="#">media</a></li>
+						<li><a href="#"><abbr title="frequently asked questions">f&amp;q</abbr></a></li>
+						<li><a href="#"><abbr title="question and answer">q&amp;a</abbr></a></li>
+					</ul>
+				</div>
+				<div class="product_menu">
+					<h3><span class="hidden">product_menu<!-- 구스다운이라고만 쓰면 모르니깐 접근성땜에 써줘야함 --></span>goose down</h3>
+				</div>
+			</div><!-- //.com_product -->
+
+			<div class="brand_menu fnb_area">
+				<h3 aria-title="brand_menu">brand</h3>
+				<ul class="link">
+					<li class="brand_01"><a href="#"><span>BASSETTI</span></a></li>
+					<li class="brand_02"><a href="#"><span>PRATESI</span></a></li>
+					<li class="brand_03"><a href="#"><span>CHRISTY</span></a></li>
+					<li class="brand_04"><a href="#"><span>ABYSS HABIDECOR</span></a></li>
+					<li class="brand_05"><a href="#"><span>BOVI</span></a></li>
+					<li class="brand_06"><a href="#"><span>FAZZINI</span></a></li>
+					<li class="brand_07"><a href="#"><span>PARENTESI QUADRA</span></a></li><span></span>
+					<li class="brand_08"><a href="#"><span>PEREIRA DA CUNHA</span></a></li>
+					<li class="brand_09"><a href="#"><span>MOLINA</span></a></li>
+					<li class="brand_10"><a href="#"><span>DAUNENSTEP</span></a></li>
+					<li class="brand_11"><a href="#"><span>DORBENA</span></a></li>
+					<li class="brand_12"><a href="#"><span>TRUMINA</span></a></li>
+					<li class="brand_13"><a href="#"><span>DAUNY</span></a></li>
+					<li class="brand_14"><a href="#"><span>CINELLI</span></a></li>
+				</ul>
+			</div><!-- //.brand_menu -->
+
+			<div class="sns fnb_area">
+				<h3>sns</h3>
+				<ol>
+					<li><a href="#"><!-- icon태그 --><i class="fa fa-facebook" aria-hidden="true"><span class="hidden">facebook</span></i></a></li>
+					<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"><span class="hidden">youtube</span></i></a></li>
+					<li><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"><span class="hidden">naver blog</span></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"><span class="hidden">instagram</span></i></a></li>
+				</ol>
+				
+			</div><!-- //.sns --> 
+
+		</nav><!-- //#fnb -->
 		<footer id="footBox" class="back_line">
 			<h2><span class="hidden">우양 알앤비</span></h2>
 			<address><!-- adress코드는 원래 italic이다. -->
@@ -118,7 +196,7 @@
 				BASSETTI Bldg., 22, Nonhyeon-ro 142-gil,Gangnam-gu,Seoul,Korea</p>
 				<p>
 					<a href="mailto:info@wooyangmb.com">info@wooyangmb.com</a> 
-					<!-- mailto와tel은 요즘 안쓰는 기능 -->
+					<!-- mailto와 tel은 요즘 안쓰는 기능 -->
 					<a href="tel:+82025184877">T.02.518.4877</a>
 				</p>
 				<p>&copy;<!-- Copyright NTT -->WOOYANG RNB All rights Reserved</p> 

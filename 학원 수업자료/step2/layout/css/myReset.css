@@ -47,19 +47,20 @@ header, article, aside, nav, footer, section, main {
 }
 
 /* mysetting */
-h2,h3,h4,h5,h6, .hidden, .link a>span {
+h2,h3,h4,h5,h6, .hidden, .link a>span  {
 	width: 0; 
 	height: 0; 
 	overflow:hidden; 
 	display:block;
 }
-.link a{
+ .link a {
 	width: 100%; 
 	height: 100%; 
 	display: block; 
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
 /* 배경라인처리 */
 	/* IE를 제외한 브라우저 {width: 100vw; height: 40px; background-color: inherit;} */
 	/* IE는 버전에 따라 적용 안됨 {width: 100%; height: 40px; background-color: #afc; position:absolute; top:0; left:0; z-index: -100;} */ 

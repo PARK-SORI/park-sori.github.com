@@ -1,0 +1,54 @@
+/* index.css */
+/* #addBanner */
+
+#addBanner {
+	width:1808px;
+	height:600px;
+	background-image: url("../img/addBanner.png");
+}	
+
+
+
+/* #context */
+#context {
+	height: 326px;
+}
+/* #fnb */
+#fnb {
+	height: 320px;
+	padding-top:20px;
+	padding-bottom:60px;
+	box-sizing:border-box;
+	background-color: #f7f7f7;
+}
+#fnb>dl {
+	height: 240px;
+	margin-right:40px;
+	float:left;
+}
+#fnb>dl:last-child {margin-right: 0;}
+	.fnb_01{width: 100px;}
+	.fnb_02{width: 136px;}
+	.fnb_03{width: 104px;}
+	.fnb_04{width: 106px;}
+	.fnb_05{width: 102px;}
+	.fnb_06{width: 116px;}
+	.fnb_07{width: 96px;}
+#fnb>dl>* {
+	width: inherit;
+	height: 16px;
+	line-height: 16px;
+	font-size: 0.625rem;
+}	
+#fnb>dl>dt {
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color:#000;
+}	
+#fnb>dl>dt ~ dd {
+	text-transform: capitalize;
+	color:#696969;
+}
+.indent {text-indent: 12px;}
+.dt_mg {margin-top:20px;}
