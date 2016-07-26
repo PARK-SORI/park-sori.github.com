@@ -1,6 +1,6 @@
 /* footBox.css */
 #footBox {
-	height: 530px;
+	height: 410px;
 }
 /* .company_img */
 .company {
@@ -56,11 +56,15 @@
 	}
 /* .location */
 .location {
-	width: 1808px;
-	height: 270px;
+	width: 100vw;
+	height: 150px;
 	background-image: url("../img/footBox_location.png");
 	border-bottom: 1px solid #8a8a8a;
-	
+	background-size:100%;
+	position: relative;
+	left: 50%;
+	top: 0;
+	margin-left: -50vw;
 }
 /* .foot_box */
 .foot_box {

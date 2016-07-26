@@ -2,9 +2,14 @@
 /* #addBanner */
 
 #addBanner {
-	width:1808px;
-	height:600px;
+	width:100vw;
+	height:280px;
+	position: relative;
+	left: 50%;
+	top: 0;
+	margin-left: -50vw;
 	background-image: url("../img/addBanner.png");
+	background-size:100%;
 }	
 
 
