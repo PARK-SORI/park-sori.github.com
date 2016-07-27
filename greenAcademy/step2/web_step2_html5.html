@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Document</title>
+<!-- style -->	
+	<style>
+	/* reset CSS */
+		* {margin:0; padding:0;}
+		header, aside, article, section, footer, nav {display:block;}
+		
+		.container {width: 960px; height: auto; margin:0 auto;}
+		.container>* {width:100;}
+		#headBox {height:150px; background-color:#afc;}
+			#gnb {width:800px; height:50px; background-color:#faa;}
+		#mainSide {height:100px; background-color:#acc; margin-top:10px;}
+		#content {height: 400px; background-color: #daa;}
+		#conBox {height: 150px; background-color: #ccc;}
+		#footBox {height: 100px; background-attachment:#dad;}
+		
+	</style>
+<!-- //style -->	
+</head>
+<body>
+	<div class="container">
+		<header id="headBox" class="head_box">
+			<h1 id="headH1"><a href="index.html">mainLogo</a></h1>
+			<nav id="gnb">
+				<h2>네비게이션(메뉴)</h2>
+			</nav>
+		</header><!-- //header -->
+		<aside id="mainSide">
+			<h2>꼭 필요하지 않은 영역이지만 있으면 좋은 영역</h2>
+		</aside><!-- //aside -->
+		<article id="content">
+			<h2>본문, 재사용이 가능한 영역</h2>
+		</article><!-- //article -->
+		<section id="conBox">
+			<h2>본문, 재사용이 불가능</h2>
+			<header id="subHead_1">
+				<h1 id="subH1">새로운 홈페이지 구성</h1>
+			</header>
+			<article id="sucCon_1">
+				<h2>sub_con</h2>
+			</article>
+			<footer id="subFoot_1">
+				<h2>sub_foot</h2>
+			</footer>
+		</section><!-- //section -->
+		<footer id="footBox">
+			<h2>subLogo</h2>
+		</footer><!-- //footer -->
+		
+	</div>
+	
+	
+	<script></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

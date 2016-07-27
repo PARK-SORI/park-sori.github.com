@@ -1,0 +1,11 @@
+/* #headBox */
+
+#headBox {height: 138px;padding:23px 0 29px;box-sizing: border-box;background-color: #fff;}
+#unb {height: 32px;margin-bottom: 42px;}
+#unb h1 {width: 138px;height:inherit;float: left;}
+#unb ul {width: 491px;height: inherit;margin-bottom: 22px;float:right;}
+#unb ul>li {float:left;}
+#gnb {height: 12px;}
+#gnb>ul {height: inherit;}
+#gnb>ul>li{float: left;}
+

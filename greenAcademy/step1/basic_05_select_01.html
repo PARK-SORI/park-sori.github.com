@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="./img/i_1.png">
+	<title>선택자 이해</title>
+	
+	<style>
+		* {color:#333;}
+		html, body {height:100%; margin:0;}
+		#container {background-color:#fcf; width:100%; height:100%;}
+		h1 {color:#fa0;}
+		#header {}
+		#header ul {background-color:#aaa;}
+		#header ul li {color:#fff; fond-weight:bold;}/* 23줄~32줄까지 표시됨 자손선택자 */
+		ul a {color:aqua;}
+		/*
+		* 전체선택자   : * {}
+		* type선택자  : 태그(요소, element)명 {}
+		* id선택자    : #아이디명 {}
+		* class선택자 : .클래스명 {}
+		* 자손선택자   : 선택자명 선택자명 {}
+		* 자식선택자   : 선택자명 > 선택자명 {}
+		*/
+		
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1>자식/자손 체크</h1>
+		<div id="header">
+			<ul>
+				<li><a href="#">test</a></li>
+				<li><p>내용</p></li>
+				<li><p>non</p></li>
+				<li>
+					<ol>
+						<li>내용</li>
+						<li>내용</li>
+						<li>내용</li>				
+					</ol>
+				</li>
+			</ul>
+		</div> <!-- #header -->
+	</div>	<!-- #container -->
+</body>
+</html>
