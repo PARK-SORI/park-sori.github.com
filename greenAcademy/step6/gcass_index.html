@@ -1,92 +1,108 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link rel="apple-touch-icon" href="favicon.png"> -->
-
-<!-- 순서 부트스트랩css 일반적인거 다음 테마 -->	
-	<link rel="stylesheet" href="./bootstrap3/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./bootstrap3/css/bootstrap-theme.min.css">
-
-<!-- css -->
-	<link rel="stylesheet" href="./gcass_css/base/myReset.css">
-	<link rel="stylesheet" href="./gcass_css/gcass_index.css">
-
-<!-- 순서 제이쿼리와 부트스트랩 부르는 순서 지키기 -->
-	<script src="./gcass_js/jquery/jquery-1.12.4.min.js"></script>
-	<script src="./gcass_js/jquery/jquery-migrate-3.0.0.min.js"></script>
-	<script src="./gcass_js/jquery/jquery-ui.min.js"></script>
-	<script src="./bootstrap3/js/bootstrap.min.js"></script>
-	
-
-	<title>gcass</title>
-
+    <!-- 순서 부트스트랩css 일반적인거 다음 테마 -->
+    <link rel="stylesheet" href="./bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap3/css/bootstrap-theme.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="./gcass_css/base/myReset.css">
+    <link rel="stylesheet" href="./gcass_css/gcass_index.css">
+    <!-- 순서 제이쿼리와 부트스트랩 부르는 순서 지키기 -->
+    <script src="./gcass_js/jquery/jquery-1.12.4.min.js"></script>
+    <script src="./gcass_js/jquery/jquery-migrate-3.0.0.min.js"></script>
+    <script src="./gcass_js/jquery/jquery-ui.min.js"></script>
+    <script src="./bootstrap3/js/bootstrap.min.js"></script>
+    <title>gcass</title>
 </head>
+
 <body>
-	<div class="container base_01">
-
-	<!-- header -->
-	<nav id="unb" class="base_02">
-		<h2>gcass 전체 메뉴</h2>
-		<ul>
-			<li><a href="#">home</a></li>
-			<li><a href="#" class="base_03">study</a></li>
-			<li><a href="#" class="base_point_01">aducation</a></li>
-		</ul>
-	</nav>
-	
-	<!-- main -->
-	<div class="con_box">
-		<header id="headBox" class="base_03">
-			<h1 class="link"><a href="#"><abbr title="green computer art scholl" class="hidden">GCASS</abbr></a>
-			</h1>
-			<nav id="gnb">
-				<h2>gcass menu</h2>
-				<ul><!-- todo:i태그의 이름 쓰기 -->
-					<li><a href="#"><span class="hidden">about</span></a></li>
-					<li><a href="#"><span class="hidden">study</span></a></li>
-					<li><a href="#"><span class="hidden">photo</span></a></li>
-					<li><a href="#"><span class="hidden">blog</span></a></li>
-					<li><a href="#"><span class="hidden">press</span></a></li>
-					<li><a href="#"><span class="hidden"><abbr title="question and answer">q&amp;a</abbr></span></a></li>
-				</ul>
-			</nav>
-		</header>
-		<article id="content">
-			<h2>gcass 내용</h2>
-			<div class="computer link">
-				<a href="#"><span>학원 상세페이지 바로가기</span></a>
-			</div>
-		</article>
-	</div>
-
-	<!-- footer -->
-	<footer id="footBox" class="base_white">
-		<h2><span class="hidden">gcass info</span></h2>
-		<ul class="sns">
-			<li><!-- 부트스트랩 스팬하고 히든스팬하고 다른거임 합치면 안됨 -->
-				<a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><span class="hidden">location</span></a>
-			</li>
-			<li>
-				<a href="#"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><span class="hidden">facebook</span></a>
-			</li>
-			<li>
-				<a href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span><span class="hidden">instagram</span></a>
-			</li>
-		</ul>
-		<address class="company_address"><!-- img태그로도 만들어보기 -->
-			<p class="com_add"><span class="hidden">회사주소</span></p>
-			<p class="copyright"><span class="hidden">저작권</span></p>
-		</address>
-		<dl class="family_site">
-			<dt class="base_03">webpage<i class=""></i></dt>
-			<dd class="base_point_01_deep"><a href="#">greencom hompage</a></dd>
-			<dt class="base_03">cafe<i class=""></i></dt>
-			<dd class="base_point_01"><a href="#">greencom cafe</a></dd>
-		</dl>
-	</footer>
-	</div><!-- .container -->
+    <div class="container base_01">
+        <!-- header -->
+        <nav id="unb" class="base_02">
+            <h2>gcass 전체 메뉴</h2>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#" class="base_03">study</a></li>
+                <li><a href="#" class="base_point_01">aducation</a></li>
+            </ul>
+        </nav>
+        <!-- main -->
+        <div class="con_box">
+            <header id="headBox" class="base_03">
+                <h1 class="link">
+                	<a href="#">
+                		<abbr title="green computer art scholl" class="hidden">GCASS</abbr>
+                	</a>
+								</h1>
+                <nav id="gnb">
+                    <h2>gcass menu</h2>
+                    <ul>
+                        <!-- todo:i태그의 이름 쓰기 -->
+                        <li><a href="#"><span class="hidden">about</span></a></li>
+                        <li><a href="#"><span class="hidden">study</span></a></li>
+                        <li><a href="#"><span class="hidden">photo</span></a></li>
+                        <li><a href="#"><span class="hidden">blog</span></a></li>
+                        <li><a href="#"><span class="hidden">press</span></a></li>
+                        <li>
+                        	<a href="#">
+                        		<span class="hidden">
+                        			<abbr title="question and answer">q&amp;a</abbr>
+                        		</span>
+                        	</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <article id="content">
+                <h2>gcass 내용</h2>
+                <div class="computer link">
+                    <a href="#"><span>학원 상세페이지 바로가기</span></a>
+                </div>
+            </article>
+        </div>
+        <!-- footer -->
+        <footer id="footBox" class="base_white">
+            <h2><span class="hidden">gcass info</span></h2>
+            <ul class="sns">
+                <li>
+                    <!-- 부트스트랩 스팬하고 히든스팬하고 다른거임 합치면 안됨 -->
+                    <a href="#">
+                    	<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                    	<span class="hidden">location</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    	<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                    	<span class="hidden">facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    	<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                    	<span class="hidden">instagram</span>
+                    </a>
+                </li>
+            </ul>
+            <address class="company_address">
+                <!-- img태그로도 만들어보기 -->
+                <p class="com_add"><span class="hidden">회사주소</span></p>
+                <p class="copyright"><span class="hidden">저작권</span></p>
+            </address>
+            <dl class="family_site">
+                <dt class="base_03">webpage<i class=""></i></dt>
+                <dd class="base_point_01_deep"><a href="#">greencom hompage</a></dd>
+                <dt class="base_03">cafe<i class=""></i></dt>
+                <dd class="base_point_01"><a href="#">greencom cafe</a></dd>
+            </dl>
+        </footer>
+    </div>
+    <!-- .container -->
 </body>
+
 </html>
