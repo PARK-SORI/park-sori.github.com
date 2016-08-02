@@ -1,0 +1,251 @@
+/* gcass_indx.css */
+
+
+/* color_set */
+
+.base_01 {
+    background-color: #adadad;
+}
+
+.base_02 {
+    background-color: #888;
+}
+
+.base_03 {
+    background-color: #777;
+}
+
+.base_white {
+    background-color: #fff;
+}
+
+.base_point_01 {
+    background-color: #fff30d;
+}
+
+
+/* container */
+
+.container {
+    width: 980px;
+    height: 850px;
+    margin: 0 auto;
+    padding:0;
+}
+
+
+/* header */
+
+#unb {
+    width: 100%;
+    height: 30px;
+}
+
+#unb>ul {
+    width: 435px;
+    height: 100%;
+    float: right;
+}
+
+#unb>ul>li {
+    width: 95px;
+    height: 100%;
+    float: left;
+}
+
+#unb>ul>li>a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#unb>ul>li:last-child {
+	 width: 245px;
+}
+
+#unb>ul>li:last-child>a {
+    color: #757575;
+    text-align:left;
+	text-indent:1.3rem; 
+	background-image: url("../gcass_img/index/main_unb/arrow.png");
+    background-repeat: no-repeat;
+    background-position:90% center;
+}
+
+#unb>ul>li:last-child>a:hover {
+    font-weight: bold;
+    color: #000;
+}
+
+#unb>ul>li>a:hover {
+    font-weight: bold;
+    color: #fff30d;
+}
+
+
+/* todo:li:last text-indent처리, 화살표 이미지 생성 */
+
+
+/* main */
+
+.con_box {
+    width: 100%;
+    height: 710px;
+}
+
+
+/* main_header */
+
+#headBox {
+    width: 250px;
+    height: 100%;
+    padding: 55px 50px 55px 47px;
+    box-sizing: border-box;
+    float: left;
+}
+
+#headBox>h1 {
+    width: 100%;
+    height: 103px;
+    margin-bottom: 42px;
+}
+
+#headBox>h1>a { 
+	background-image: url("../gcass_img/all/header/logo.png");
+    background-position: center center;
+}
+
+#headBox>nav {
+    width: 100%;
+    height: 455px;
+}
+
+#headBox>nav>ul {
+    width: 100%;
+    height: 100%;
+    padding-right: 17px;
+    box-sizing: border-box;
+}
+
+#headBox>nav>ul>li {
+    width: 100%;
+    height: 36px;
+    margin-bottom:25.75px;
+}
+
+
+
+#headBox>nav>ul>li:last-child {
+    height: 112px;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border: none;
+}
+
+#headBox>nav>ul>li>a {
+    display:block;
+    width: 100%;
+    height: 100%;
+    background-image:url("../gcass_img/all/header/nav_gnb.png");
+    background-repeat:no-repeat;   
+}
+
+#headBox>nav>ul>li:nth-child(1)>a {background-position:0 top;}
+#headBox>nav>ul>li:nth-child(2)>a {background-position:0 -62.5px;}
+#headBox>nav>ul>li:nth-child(3)>a {background-position:0 -124px;}
+#headBox>nav>ul>li:nth-child(4)>a {background-position:0 -186.5px;}
+#headBox>nav>ul>li:nth-child(5)>a {background-position:0 -248.5px;}
+#headBox>nav>ul>li:nth-child(6)>a {background-position:0 bottom;}
+
+#headBox>nav>ul>li:hover>a {background-image:url("../gcass_img/all/header/nav_gnb_on.png");}
+
+#content {
+    width: 100%;
+    height: 100%;
+    float: right;
+    background-image: url("../gcass_img/index/main_content/greenbg.png");
+    background-repeat: no-repeat;
+    background-position: 340px 50px;
+}
+
+.computer {
+    width: 300px;
+    height: 520px;
+    margin-top: 125px;
+    margin-left: 80px;
+    transition: all 1s ease;
+}
+
+.computer:hover {
+    transform: translate(100px);
+}
+
+.computer>a {
+    background-image: url("../gcass_img/index/main_content/computer.png");
+}
+
+.computer>a:hover {
+    background-image: url("../gcass_img/index/main_content/computer_on.png");
+}
+
+
+/* main_content */
+
+#content {
+    width: 730px;
+    height: 100%;
+}
+
+
+/* footer */
+
+#footBox {
+    width: 100%;
+    height: 110px;
+    padding-top:20px;
+    box-sizing:border-box;
+}
+
+#footBox>h2 {
+    width: 64px;
+    height: 42px;
+    margin-left:42px;
+    margin-right: 25px;
+    float: left;
+}
+
+.sns {
+    width: 100px;
+    height: 46px;
+    margin-right: 18px;
+    float: left;
+}
+.sns>li {
+    width:calc(100% / 3);/* IE하위버전은 안먹음 사이즈는 %로주고 / 앞뒤로는 반드시 띄어쓰기 */
+    height: 100%;
+    padding:5px;
+    box-sizing: border-box;
+    float:left;
+}
+.sns>li>a {width: 100%;height: 100%;display: block;text-align: center;line-height: 2.25rem;}
+.sns .glyphicon {color:#777;font-size: 2rem;}
+.sns .glyphicon:hover {color:#a8c;} 
+.company_address {
+    width: 340px;
+    height: 46px;
+    float: left;
+}
+
+	.com_add{}
+	.copyright{} 
+.family_site {
+    width: 304px;
+    height: 130px;
+    float: right;
+    margin-top:-65px;
+    margin-right:40px;
+}

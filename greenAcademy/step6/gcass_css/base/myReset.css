@@ -1,0 +1,184 @@
+/* myreset.css */
+
+a:focus,
+input:focus,
+button:focus {
+    outline: 3px solid #333;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: san-serif;
+    line-height: 1.15;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+table,
+tr,
+td,
+th,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+form,
+fieldset {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #07f;
+}
+
+table,
+tr,
+td,
+th,
+thead,
+tbody,
+tfoot {
+    border: 1px solid #777;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-left: 0;
+    border-right: 0;
+}
+
+thead {
+    background-color: #ccc;
+}
+
+form,
+fieldset {
+    border: 0;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: 1px solid #282828;
+    box-sizing: border-box;
+    text-indent: 0.3rem;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background-color: rgba(251, 180, 20, 0.5);
+    /* #fbb414 */
+    outline: 0;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+
+/* html5 */
+
+header,
+article,
+aside,
+nav,
+footer,
+section,
+main {
+    display: block;
+}
+
+
+/* mysetting */
+
+h2,
+h3,
+h4,
+h5,
+h6,
+.hidden,
+.link a>span {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.link a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* 배경라인처리 */
+
+
+/* IE를 제외한 브라우저 {width: 100vw; height: 40px; background-color: inherit;} */
+
+
+/* IE는 버전에 따라 적용 안됨 {width: 100%; height: 40px; background-color: #afc; position:absolute; top:0; left:0; z-index: -100;} */
+
+
+/* before를 쓰나 after를 쓰나 여기서는같다. 요즘 추세는 밑에처럼 쓴다 */
+
+
+/* header와 footer fnb에 같이 쓰이니깐 묶어서 쓴다*/
+
+.back_line {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.back_line:after {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -50vw;
+    z-index: -100;
+    background: inherit;
+}
+
+
+/* body {
+    overflow-x: hidden;
+} */
+/* vw는 세로스크롤까지 너비로잡아서 가로스크롤이생김
+그래서 바디를 넘어서는건 숨긴다고 해야 가로스크롤이 안생김 원래는 스크립트서 처리*/
