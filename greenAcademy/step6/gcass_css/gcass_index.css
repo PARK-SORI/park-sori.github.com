@@ -1,20 +1,12 @@
 /* gcass_indx.css */
 
-
 /* color_set */
-
 .base_01 {background-color: #adadad;}
-
 .base_02 {background-color: #888;}
-
 .base_03 {background-color: #777;}
-
 .base_white {background-color: #fff;}
-
 .base_point_01 {background-color: #fff30d;}
-
 .base_point_01_deep {background-color: #baa50c;}
-
 
 /* container */
 
@@ -24,7 +16,6 @@
     margin: 0 auto;
     padding: 0;
 }
-
 
 /* header */
 
@@ -101,10 +92,6 @@
     color: #fff30d;
 }
 
-
-/* todo:li:last text-indent처리, 화살표 이미지 생성 */
-
-
 /* main */
 
 .con_box {
@@ -132,6 +119,7 @@
     margin-right: -50vw;
     z-index: -100;
 }
+
 /* main_header */
 
 #headBox {
@@ -140,7 +128,6 @@
     padding: 55px 50px 55px 47px;
     box-sizing: border-box;
     float: left;
-    
 }
 
 #headBox>h1 {
@@ -188,15 +175,10 @@
 }
 
 #headBox>nav>ul>li:nth-child(1)>a {background-position: 0 top;}
-
 #headBox>nav>ul>li:nth-child(2)>a {background-position: 0 -62.5px;}
-
 #headBox>nav>ul>li:nth-child(3)>a {background-position: 0 -124px;}
-
 #headBox>nav>ul>li:nth-child(4)>a {background-position: 0 -186.5px;}
-
 #headBox>nav>ul>li:nth-child(5)>a {background-position: 0 -248.5px;}
-
 #headBox>nav>ul>li:nth-child(6)>a {background-position: 0 bottom;}
 #headBox>nav>ul>li:hover>a {
     background-image: url("../gcass_img/all/header/nav_gnb_on.png");
@@ -211,7 +193,6 @@
     background-image: url("../gcass_img/index/main_content/greenbg.png");
     background-repeat: no-repeat;
     background-position: 340px 50px;
-    
 }
 
 .computer {
@@ -279,7 +260,6 @@
 }
 
 .sns .glyphicon {color: #777;font-size: 2rem;}
-
 .sns .glyphicon:hover {color: #a8c;}
 
 .company_address {
@@ -311,8 +291,7 @@
     margin-right: 40px;
 }
 
-.family_site>dt,
-.family_site>dd {
+.family_site>dt, .family_site>dd {
     height: 50%;
     float: left;
     text-align: center;
@@ -324,7 +303,5 @@
 }
 
 .family_site>dt {width: 100px;color: #fff;}
-
 .family_site>dd {width: 200px;}
-
 .family_site>dd:hover {color: #fff;text-shadow: 1px 1px 1px #777;}
