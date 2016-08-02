@@ -1,0 +1,35 @@
+/* lnb.css */
+
+#lnb {
+	position:fixed;
+	top:0;
+	right:0;
+	width: 54px;
+	height:100vh;
+	background-color: #5a5d66;
+	z-index: 100;
+}
+#lnb>* {width: inherit;}
+#lnb>ul {
+	height: 948px;
+	margin-top:122px;
+	background-color: #6a6c78;
+	position:relative;
+}
+#lnb>ul>li {
+	height: 50px;
+	border-bottom: 1px solid #5a5d66;
+	box-sizing: border-box;
+}
+#lnb>ul>li>a {height:inherit;}
+#lnb>ul>li>a>i {
+	display: block;
+	font-size:1.625rem;
+	text-align: center;
+	line-height: 50px;
+}
+.button>img {
+	position: absolute;
+	top:272px;
+	right:54px;
+}

@@ -1,0 +1,39 @@
+/* index_container.css */
+	#container {
+		height:748px;
+		margin-bottom:20px;
+		width: 1004px;
+	}
+
+	.product {width:inherit; height:460px; margin-bottom:8px;}
+		.main_product {width: 668px; height: 460px; float: left; }
+		.main_product>a {background-image: url("../img/content/content_01_big_1.png");}
+
+		.news_event {width: 330px; height: 196px; margin-bottom: 8px; float:right;}
+		.news_event>a {background-image: url("../img/content/content_02_small_1.png");}
+		/* img코드는 src로 불러오지만, background-image는 url로 불러온다 */
+		.best_product {
+			width: 330px;
+			height: 256px;
+			float:right;
+		}
+		.best_product>a {background-image: url("../img/content/content_03_small_2.png");}
+	.promotion {width:inherit; height:280px;}
+		.reservation {
+			width: 332px; 
+			height: 148px; 
+			margin-bottom: 8px; 
+		}
+		.reservation>a {background-image: url("../img/content/content_04_small_3.png");}
+		.e_shop {
+			width:332px; 
+			height:124px; 
+		}
+		.e_shop>a {background-image: url("../img/content/content_05_small_4.png");}
+		.store_location {
+			width: 670px; 
+			height: 280px;
+			float:right;
+			margin-top:-280px;
+		}
+		.store_location>a {background-image: url("../img/content/content_06_big_2.png");}

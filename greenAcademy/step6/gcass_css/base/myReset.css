@@ -4,14 +4,18 @@ a:focus,
 input:focus,
 button:focus {
     outline: 3px solid #333;
+    outline-offset: 0.0625rem;
+    position:relative;
+    z-index: 1000;
 }
+/* 포커스잡을때 짤려서 나오니깐 부트스트랩쓸때는 그문제가 해결되지만 안쓰면 해결안됨 그래서 포지션을주고 앞으로 뺴냄  */
 
 html,
 body {
     margin: 0;
     padding: 0;
     color: #333;
-    font-family: san-serif;
+    font-family: sans-serif;
     line-height: 1.15;
     font-size: 100%;
     -ms-text-size-adjust: 100%;
