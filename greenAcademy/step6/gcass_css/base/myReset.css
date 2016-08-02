@@ -6,8 +6,6 @@ a:focus,input:focus,button:focus {
     position: relative;
     z-index: 1000;
 }
-
-
 /* 포커스잡을때 짤려서 나오니깐 부트스트랩쓸때는 그문제가 해결되지만 안쓰면 해결안됨 
    그래서 포지션을주고 앞으로 뺴냄  */
 
@@ -102,13 +100,8 @@ h2,h3,h4,h5,h6,.hidden,.link a>span {
     background-position: center;
 }
 
-
 /* 배경라인처리 */
-
-
 /* IE를 제외한 브라우저 {width: 100vw; height: 40px; background-color: inherit;} */
-
-
 /* IE는 버전에 따라 적용 안됨 {
     width: 100%; 
     height: 40px; 
@@ -116,11 +109,7 @@ h2,h3,h4,h5,h6,.hidden,.link a>span {
     position:absolute; top:0; 
     left:0; z-index: -100;
 } */
-
-
 /* before를 쓰나 after를 쓰나 여기서는같다. 요즘 추세는 밑에처럼 쓴다 */
-
-
 /* header와 footer fnb에 같이 쓰이니깐 묶어서 쓴다*/
 
 .back_line {
@@ -141,11 +130,8 @@ h2,h3,h4,h5,h6,.hidden,.link a>span {
     background: inherit;
 }
 
-
 /* body {
     overflow-x: hidden;
 } */
-
-
 /* vw는 세로스크롤까지 너비로잡아서 가로스크롤이생김
 그래서 바디를 넘어서는건 숨긴다고 해야 가로스크롤이 안생김 원래는 스크립트서 처리*/
