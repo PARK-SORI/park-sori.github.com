@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<link rel="stylesheet" href="gcass_css/myReset.css" />
+	
+
+	<title>transform&transition</title>
+
+<!-- style -->
+	<style>
+		h1 {width: 100%;text-align:center;padding-bottm:1rem; border-bottom:1px solid #333;margin-bottom: 30px;}
+		h2 {font-size:1.5rem;color:#333;}
+		ul {width: 780px;height: 100px; margin:0 auto; border:2px solid #333;perspective: 100px;/*rotateY이 일때 이걸 기준임 수치가 낮을수록(100)가까이서 보니깐 더 외곡되고, 높을수록(1000) 더 전체적으로 보이니깐 외곡이 덜 된다.*/transition:all 1s;}
+		ul>li {width: 80px; height: 80px; float:left; margin:0.5rem;text-align: center;line-height: 80px;background-color:#7af;font-weight:bold;color:#fff;}
+		ul>li:nth-child(1) {
+			transform:rotate(30deg);/*회전은 각도 값을 준다,-값은 반대로 회전*/
+			transition:transform 0.5s;}
+		ul>li:nth-child(1):hover {transform:rotate(-404deg);/*가끔 각도가 딱딱 떨어질때마다 안먹는경우 있다 그때는 1을 더주기.*/}	
+		ul>li:nth-child(2) {transform:skew(-45deg);/*글씨도 같이 기우니깐 글씨만 반대로 돌려줘야함*/}
+		ul>li:nth-child(2):hover {transform:skewY(45deg);}
+		ul>li:nth-child(2)>span {transform:skew(45deg);display:block;} 
+		ul>li:nth-child(3):hover {transform:scale(3);/* 3배만큼커짐 .5는 0.5라는 얘기 -주변에 영향 안미침!*/}
+		ul:hover>li:nth-child(4) {transform:translate(500px,200px);background-color: #f0f;/*포지션에 리레이티브랑비슷하지만 기능은 다름(가로값,세로값)*/}/*호버는 움직이는 당사자보다는 안움직이는 부모에 거는게 안정적이다.*/
+		ul:hover>li:nth-child(5) {transform-origin:right top;transform:rotate(45deg);/*origin은 기준을잡는 개념. 어디를 기준으로 돌겠습니다.여기서는 사각형 오르쪽 위의 꼭지점을 기준으로 돌겠습니다.*/}
+		ul>li:nth-child(6) {transform:rotateY(-50deg);/*부모에 perspective를 줘야함*/}
+		ul:hover>li:nth-child(7) {transform:rotate(-180deg) translateY(50px);}
+		ul:hover>li:nth-child(8) {transform:translateY(50px) rotate(-180deg);}
+
+		.transition {width: 850px;height: 100px;margin:14rem auto; border:1px solid #888;}
+		.transition>ol {width: inherit;height: inherit;}
+		.transition li {width: 8rem;height: 5rem;background-color: #c7f;color:#fff;float:left;margin:1rem;padding: 1rem;box-sizing:border-box;text-align:center;}/*라인헤이트는 원래 줄간격임 그래서 한줄일때는 세로정렬이지만 두줄이상은 짤려서 나옴. 이때는 라인헤이트가 아닌 페딩을 줘야함*/
+		.transition:hover li {transform:translateY(-10rem);background-color: #6cf;}
+		.transition li:nth-child(1) {transition-duration:0.5s;transition-property: transform;
+		/*내가 지정하는 속성만 값을 줄 수 있다.배경색은 한번에 바뀌고 움직임만 효과를 줌*/}
+		/* duration은 무조건 줘야함 */
+		.transition li:nth-child(2) {transition-duration:2s;}
+		.transition li:nth-child(3) {transition-duration:2s;transition-timing-function:ease;}
+		/* linear, ease, ease in, ease out, ease-in-out *//*속성을 안쓰면 전체가 적용*/
+		.transition li:nth-child(4) {transition-delay:1s; transition-duration: 2s;}
+		.transition li:nth-child(5) {transition:all 0.7s ease-in 2s;}/* (속성, 시간, 속도감, 지연시간) or all  */
+
+	</style>
+</head>
+<body>
+	<h1>css3일부기능</h1>
+
+	<h2>transform</h2>
+	<ul>
+		<li>rotate</li>
+		<li><span>skew</span></li>
+		<li>scale</li>
+		<li>translate</li>
+		<li>origin</li>
+		<li>rotate-y</li>
+		<li>multi1</li>
+		<li>multi2</li>
+	</ul>
+	
+	<h2>transition</h2>
+	<div class="transition">
+		<ol>
+			<li>property</li><!-- 속성 -->
+			<li>duration</li><!-- 시간 -->
+			<li>timing-function</li><!-- 속도감 -->
+			<li>delay</li><!-- 지연시간 -->
+			<li>all</li><!-- 위에 속성을 한번에 쓰는거 -->
+		</ol>
+	</div>
+</body>
+</html>
