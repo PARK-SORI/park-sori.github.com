@@ -12,8 +12,18 @@ h1:hover {text-shadow: 0.2rem 0.2rem 0.2rem #333;}
 .box_01>video {width: 100%;height: auto;/* 크기값은 하나만 건드리고 오토 줘야함.둘다주면 비율이 안 맞아 찌그러진 형태  */}
 
 /* todo:깃에서 이미지다운 백그라운드 사이즈 적용 */
-.box_02 {background-color: #f5c;background-image: url("../img/url.jpg");
-background-repeat: no-repeat;background-position: center;background-size: 
+.box_02 {
+	background-color: #f5c;
+	background-image: url("../img/url.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size:100%;
+ 	-moz-background-size:100%;
+ 	-ms-background-size:100%;
+ 	-o-background-size:100%;
+ 	background-size:100%;
+ 	background-attachment:fixed;
 }
 .box_03 {background-color: #ffd;}
 .box_04 {background-color: #459;}
+
