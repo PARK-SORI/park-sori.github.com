@@ -1,0 +1,6 @@
+/* myfont.css */
+/* 나눔팬 서체 설정방법  */
+@font-face {
+	font-family:napen;
+	src:url("NanumPenScript-Regular.ttf");
+}
