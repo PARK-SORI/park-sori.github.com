@@ -8,6 +8,7 @@
 	<!-- IE하위버전을 위해 쓰는 것들 -->
 	<!--[if lte IE 9]>
 		<script src="./lt_ie/html5shiv/dist/html5shiv.min.js"></script>
+		<script src="./lt_ie/ie9-js/ie9.min.js"></script>
 		<script src="./lt_ie/pie/PIE.js"></script>
 		<script src="./lt_ie/responsive.min.js" ></script>
 	<![endif]-->	
@@ -16,14 +17,42 @@
 	
 
 	<title>IE</title>
+	<style>
+		button {padding:1rem;background-color:#4aa;color:#fff;font-weight:bold;transition:all 0.5s;}
+		button:hover {text-shadow: 0.1rem 0.1rem 0.1rem #fa0;font-size: 1.2rem;}
+	</style>
 </head>
 <body>
+	<button id="btn" type="button">버튼누르기</button>
+	<button id="reset" type="button">초기화버튼</button>
+
+	<script src="./js/jquery/jquery-1.12.4.min.js"></script>
+	<script src="./js/jquery/jquery-migrate-3.0.0.min.js"></script>
+	<script src="./js/jquery/jquery-ui.min.js"></script>
 	<script>
+		
 		$(document).ready(function(){
-			link rel="stylesheet" href="./js/jquery/jquery-1.12.4.min.js" 
-			link rel="stylesheet" href="./js/jquery/jquery-migrate-3.0.0.min.js" 
-			link rel="stylesheet" href="./js/jquery/jquery-ui.min.js" 
+		var btn = document.querySelector('#btn');
+		var rest = document.querySelector('#reset');
+
+		var win_width = $(window).width();
+		var mobile = 600;
+		var table = 768;
+		var pc = 1024;
+		//consoel.log(win_width);
+
+		if(win_width<mobile){
+			$('body').css({'background-color':'#fac'});
+		}
+		else if(win_width>=mobile && win_width<table){
+			$('body').css({'background-color':'#6ac'});
+		} 
+		else{
+			$('body').css({'background-color':'#67c'});
+		};
+			
 		});
+
 	</script>
 </body>
 </html>
