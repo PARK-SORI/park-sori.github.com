@@ -1,6 +1,7 @@
 /* myreset.css */
 a:focus, input:focus, button:focus{
 	outline:3px solid #fb0; position: relative; z-index:1000; }
+
 html, body{margin: 0; padding: 0;
 	color:#333;
 	 font-family: sans-serif;
@@ -16,7 +17,7 @@ h1,h2,h3,h4,h5,h6,p,div,table,tr,td,th, ul, ol, li, dl, dt, dd,button
 {margin: 0; padding: 0; font:inherit;}
 ul,ol,li{list-style: none;}
 a{text-decoration: none; color:#555;}
-a:hover{font-weight:bold; color:#07f; text-decoration: none;}
+a:hover{ color:#07f; text-decoration: none;}
 
 form, fieldset{border: 0;margin:0;padding:0;}
 
