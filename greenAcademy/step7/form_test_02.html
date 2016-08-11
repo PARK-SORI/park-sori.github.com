@@ -31,7 +31,7 @@
 		<p>입력하시는 정보는 암호화되어처리되며,<br /> 어떠한 비용도 발생하지 않습니다.</p>
 		<form action="#" method="post">
 			<fieldset>
-				<legend>휴대폰인증</legend>
+				<legend>휴대폰인증 하기</legend>
 				<dl>
 					<dt>휴대폰번호</dt>
 					<dd>
@@ -40,41 +40,49 @@
 							<option value="010">010</option>
 							<option value="011">011</option>
 							<option value="012">012</option>
+							<option value="013">013</option>
+							<option value="014">014</option>
 							<option value="016">016</option>
+							<option value="017">017</option>
+							<option value="018">018</option>
 							<option value="019">019</option>
+							<option value="0505">0505</option>
 						</select>
 					</dd>
 					<dd>
-						<input type="text" name="mo_num_1" id="mo_num_1" value="" maxlength="4">
-						<label for="mo_num_1" class="re">휴번폰번호을 입력해주세요</label>
+						<input type="text" name="middle_num" id="middle_num" value="" maxlength="4">
+						<label for="middle_num" class="re">휴대폰번호 가운데 셋 또는 네자리 번호를 입력하세요.</label>
+						<span class="line"></span>
 					</dd>
 					<dd>
-						<input type="text" name="mo_num_2" id="mo_num_2" value="" maxlength="4">
-						<label for="mo_num_2" class="re">휴번폰번호을 입력해주세요</label>
+						<input type="text" name="last_num" id="last_num" value="" maxlength="4">
+						<label for="last_num" class="re">휴대폰번호 마지막 셋 또는 네자리 번호를 입력하세요.</label>
+						<span class="line"></span>
 					</dd>
 
 					<dt>이동통신사</dt>
 					<dd>
-						<input type="radio" name="broad" id="skt" value="">
+						<input type="radio" name="broad" id="skt" value="skt">
 						<label for="skt">SKT</label>
 					</dd>
 					<dd>
-						<input type="radio" name="broad" id="kt" value="">
+						<input type="radio" name="broad" id="kt" value="kt">
 						<label for="kt">KT</label>
 					</dd>
 					<dd>
-						<input type="radio" name="broad" id="lg" value="">
+						<input type="radio" name="broad" id="lg" value="lg">
 						<label for="lg">LG U+</label>
 					</dd>
 				</dl>
-				<input type="checkbox" name="agree" id="agree" value="">
+				<input type="checkbox" name="agree" id="agree" value="" checked="checked">
 				<label for="agree">개인 정보 제공 및 활용에 동의합니다.</label>
 			</fieldset>
 			<fieldset>
-				<input type="submit" name="submit" id="submit" value="확인">
-				<label for="submit" class="hidden">확인버튼을 눌러주세요</label>
-				<input type="reset" name="reset" id="reset" value="취소">
-				<label for="reset" class="hidden">취소버튼을 눌러주세요</label>
+				<legend>인증 확인 및 취소</legend>
+				<input type="submit" name="done" id="done" value="확인">
+				<label for="done" class="hidden">확인버튼을 눌러주세요</label>
+				<input type="reset" name="cancle" id="cancle" value="취소">
+				<label for="cancle" class="hidden">취소버튼을 눌러주세요</label>
 			</fieldset>
 		</form>
 	</div>
