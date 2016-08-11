@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" href="./css/myReset.css" />
+	<link rel="stylesheet" href="./css/form_test_02.css" />
+	
+	<!-- IE하위버전을 위해 쓰는 것들 -->
+	<!--[if lte IE 9]>
+        <link rel="stylesheet" type="text/css" href="./css/form_ie_02.css" />
+		<script src="./lt_ie/html5shiv/dist/html5shiv.min.js"></script>
+		<script src="./lt_ie/ie9-js/ie9.min.js"></script>
+		<script src="./lt_ie/pie/PIE.js"></script>
+		<script src="./lt_ie/responsive.min.js" ></script>
+	<![endif]-->
+	<!--[if lte IE 7]>
+        <link rel="stylesheet" type="text/css" href="./css/form_ie_03.css" />
+	<![endif]--><!-- ie7까지는 padding의 box-sizing이 안먹어서 width값을 조정 해 줘야함 -->	
+	
+	<!-- PIE.js사용시 css 말미에 behavior:url("./pie/PIE.js")를 붙여야 한다 -->
+	
+
+	<title>본인인증</title>
+
+</head>
+<body>
+	<div class="container">
+		<h2>본인 인증 서비스</h2>
+		<h3>휴대폰 인증</h3>
+		<p>입력하시는 정보는 암호화되어처리되며,<br /> 어떠한 비용도 발생하지 않습니다.</p>
+		<form action="#" method="post">
+			<fieldset>
+				<legend>휴대폰인증</legend>
+				<dl>
+					<dt>휴대폰번호</dt>
+					<dd>
+						<select id="" name="">
+							<option value=""></option>
+							<option value="010">010</option>
+							<option value="011">011</option>
+							<option value="012">012</option>
+							<option value="016">016</option>
+							<option value="019">019</option>
+						</select>
+					</dd>
+					<dd>
+						<input type="text" name="mo_num_1" id="mo_num_1" value="" maxlength="4">
+						<label for="mo_num_1" class="re">휴번폰번호을 입력해주세요</label>
+					</dd>
+					<dd>
+						<input type="text" name="mo_num_2" id="mo_num_2" value="" maxlength="4">
+						<label for="mo_num_2" class="re">휴번폰번호을 입력해주세요</label>
+					</dd>
+
+					<dt>이동통신사</dt>
+					<dd>
+						<input type="radio" name="broad" id="skt" value="">
+						<label for="skt">SKT</label>
+					</dd>
+					<dd>
+						<input type="radio" name="broad" id="kt" value="">
+						<label for="kt">KT</label>
+					</dd>
+					<dd>
+						<input type="radio" name="broad" id="lg" value="">
+						<label for="lg">LG U+</label>
+					</dd>
+				</dl>
+				<input type="checkbox" name="agree" id="agree" value="">
+				<label for="agree">개인 정보 제공 및 활용에 동의합니다.</label>
+			</fieldset>
+			<fieldset>
+				<input type="submit" name="submit" id="submit" value="확인">
+				<label for="submit" class="hidden">확인버튼을 눌러주세요</label>
+				<input type="reset" name="reset" id="reset" value="취소">
+				<label for="reset" class="hidden">취소버튼을 눌러주세요</label>
+			</fieldset>
+		</form>
+	</div>
+
+	<script src="./js/jquery/jquery-1.12.4.min.js"></script>
+	<script src="./js/jquery/jquery-migrate-3.0.0.min.js"></script>
+	<script src="./js/jquery/jquery-ui.min.js"></script>
+	
+</body>
+</html>

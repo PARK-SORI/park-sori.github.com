@@ -1,0 +1,25 @@
+/* form_test_02.css */
+
+.container {width:450px;height:366px;}
+
+h2,h3,p,form {padding-left:38px;padding-right:38px;}
+h2 {height:72px;padding-top:20px;font-size:20.8px;background-color:#f06;}
+h3 {height:46px;padding-top:16px;padding-bottom:8px;font-size:16px;text-indent: 10px;}
+p {height:44px;padding-bottom:12px;margin-left:10px;font-size:11.2px;}
+form {height:204px;padding-bottom: 20px;}
+
+dl {height:96px;padding:20px 16px 16px 8px;}
+dt {width:64px;height:18px;font-size: 11.2px;margin-right:13px;}
+
+fieldset:first-child {width:375px;height:148px; }
+fieldset:first-child>dl>dd {width:74px;height:18px;margin-bottom: 17px;}
+
+fieldset:first-child>dl>dd:nth-child(3) {margin-left:25px;margin-right:25px;}
+
+fieldset:first-child>dl>dd>input[type="radio"] {width:16px;height:16px;}
+input[type="checkbox"] {margin-left:10px;margin-top: 10px;}
+
+fieldset:last-child {width:194px;height:40px;}
+fieldset:last-child>input {width:69px;height:38px;line-height: 38px;font-size:16px;}
+
+fieldset:last-child>input[type="reset"] {margin-top:-38px;}
