@@ -1,0 +1,10 @@
+/* scss기본세팅 */
+
+// css넘길필요 없으니 넘기지 말라고 이름 앞에 _를 쓴다.
+
+// 변수선언은 css로 변환이 안됨
+
+$main_color : #0af;
+$main_font_color : #777;
+$font_line : 1px solid $main_font_color;
+$file_1 : "../img/" ;

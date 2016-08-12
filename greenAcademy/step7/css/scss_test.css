@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* scss기본세팅 */
+/**
+ *import는 주석보다 먼저오는게 좋음
+ *그리고 url은 참조(css를 열었을때 내용이 없음)고
+ *이건 합치(css를 열었을때 내용이 생김)는 기능이다.
+ *scss에서 scss를 땡겨오는건 주소에 확장자를 안써도 된다.
+*/
+#headBox { background-color: #0af; }
+
+#headBox h1 { background-color: #0af; color: #777; }
+
+#headBox h1:hover { border-bottom: 1px solid #777; }
+
+#headBox ul { background-color: #0af; }
+
+#headBox ul > li { border-bottom: 1px solid #777; }
+
+#headBox ul > li > a { color: #777; }
+
+#conBox a { color: #dddddd; }
+
+#conBox a:nth-child(2) { border-bottom: 1px solid #777; }
+
+.tagbox a { color: black; }
+
+#footBox a { background-color: #0af; background-image: url("../img/login.jpg"); }

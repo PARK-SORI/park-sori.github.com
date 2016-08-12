@@ -1,0 +1,38 @@
+@import "_test_base"; 
+//@import url("_test_base.scss");
+
+/**
+ *import는 주석보다 먼저오는게 좋음
+ *그리고 url은 참조(css를 열었을때 내용이 없음)고
+ *이건 합치(css를 열었을때 내용이 생김)는 기능이다.
+ *scss에서 scss를 땡겨오는건 주소에 확장자를 안써도 된다.
+*/
+
+// 한줄주석도 사용 가능. 단, css로 변환은 안됨
+
+
+#headBox {background-color: $main_color;
+	h1 {
+		background-color: $main_color;
+		color:$main_font_color;
+		&:hover {border-bottom: $font_line;}
+	}//h1
+	ul {background-color: $main_color;
+		>li {border-bottom: $font_line;
+			>a {color:$main_font_color ;}
+		}//li
+	}//ul	
+}//#headBox
+
+#conBox a {
+	color:lighten($main_font_color, 40%);
+	&:nth-child(2) {border-bottom: $font_line;}
+}
+.tagbox a {color:darken($main_font_color, 70%) ;}
+
+#footBox a {
+	background-color:$main_color;
+	background-image:url($file_1 + "login.jpg")
+}
+
+
