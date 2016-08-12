@@ -2,14 +2,17 @@
 a:focus, input:focus, button:focus{
 	outline:3px solid #fb0; position: relative; z-index:1000; }
 
-html, body{margin: 0; padding: 0;
+
+
+html, body{margin: 0; padding: 0;height:100%;/*가로값은 기본100%임, 세로값만 없으니 설정 */
 	color:#333;
 	 font-family: sans-serif;
 	 /*line-height: 1.15;*/
-	 font-size:100%;
-	 -o-text-size-adjust: 100%;
-	 -ms-text-size-adjust: 100%;
 	 -webkit-text-size-adjust: 100%;
+	 -moz-text-size-adjust: 100%;
+	 -ms-text-size-adjust: 100%;
+	 -o-text-size-adjust: 100%;
+	 font-size:100%;
 	height: 100%;/* 브라우저는 기본 높이값이 없어서 애초에 100%주면 안먹으니깐 미리 설정 */
 }
 
