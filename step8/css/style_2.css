@@ -1,0 +1,17 @@
+/* style.css */
+ul,li {margin:0;padding:0;}
+.container {width: 700px;/*화살표 가로너비만큼 너비를 늘려줌 */margin:0 auto;
+	background-color: #faf9f9;position: relative;}
+#calendar {width: 625px;margin:0 auto;}
+.slides_container {width:625px;height: 471px;}
+.slides_container div.item {width:625px;height: 471px;}
+a.prev,a.next {position: absolute;top:250px;display: block;width: 23px;height: 43px;
+	background-image: url(../imgs/sp_calendar.png);text-indent: -9999px;}
+a.prev {left:10px;background-position: -110px -50px;}
+a.next {right:10px;background-position: -140px -50px;}
+.pagination {list-style:none;width: 75px;margin:0 auto;}
+.pagination:after {content:"";display: block;clear: both;}
+.pagination li{float:left;}
+.pagination li a{display: block;width: 15px;height: 15px;background-image: url(../imgs/sp_calendar.png);
+	text-indent: -9999px;background-position: -39px -48px;}
+.pagination li.current a {background-position: -19px -48px;}
