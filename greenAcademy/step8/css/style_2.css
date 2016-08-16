@@ -1,0 +1,41 @@
+/* style_2.css */
+ul,li,h1 {margin:0;padding:0;}
+ul,li {list-style:none;}
+
+.container {width: 700px;/*화살표 가로너비만큼 너비를 늘려줌 */margin:0 auto;
+	background-color: #faf9f9;position: relative;border:1px solid #e8e8e8;}
+h1 {width:100%;height:126px;padding-left: 41px;padding-top: 33px;box-sizing:border-box;background-color: #fff;}	
+h1>span {display: block;width: 330px;height: 61px;background-image: url(../imgs/sp_login.png);text-indent: -9999px;}
+#calendar {width: 625px;margin:0 auto;}
+.slides_container {width:625px;height: 471px; padding-top:30px;border-top:1px solid #e8e8e8; }
+.slides_container div.item {width:625px;height: 471px;}
+
+a.prev,a.next {position: absolute;top:350px;display: block;width: 23px;height: 43px;
+	background-image: url(../imgs/sp_calendar.png);text-indent: -9999px;}
+a.prev {left:10px;background-position: -110px -50px;}
+a.next {right:10px;background-position: -140px -50px;}
+.pagination {width: 625px;position: relative;border-bottom: 1px solid #e8e8e8;}
+.pagination:after {content:"";display: block;clear: both;}
+.pagination li{float:left;position: absolute;top:-7px;z-index: 100;}
+.pagination li:nth-child(1) {left:275px;}
+.pagination li:nth-child(2) {left:290px;}
+.pagination li:nth-child(3) {left:305px;}
+.pagination li:nth-child(4) {left:320px;}
+.pagination li:nth-child(5) {left:335px;}
+.pagination li a{display: block;width: 15px;height: 15px;background-image: url(../imgs/sp_calendar.png);
+	text-indent: -9999px;background-position: -39px -48px;}
+.pagination li.current a {background-position: -19px -48px;}
+
+.lnb {width: 700px;height: 110px;padding-left: 15px;padding-right: 10px;box-sizing: border-box;}
+.lnb:after {content:"";display: block;clear: both;}
+.lnb li {float:left;width: 211px;height: 62px;border-right:1px solid #e8e8e8;
+margin-top: 24px;}
+.lnb li:nth-child(2) {padding-left: 10px;}
+.lnb li:nth-child(3) {width: 230px;border:none;padding-left:6px;}
+
+.lnb li>a {height: 110px;display: block;
+	background-image: url(../imgs/sp_login.png);text-indent: -9999px;
+	float:left;background-repeat: no-repeat;margin-top: -24px;}
+.lnb li:nth-child(1)>a {width: 211px;background-position:0 -100px;}
+.lnb li:nth-child(2)>a {width: 211px;background-position:0 -220px;}
+.lnb li:nth-child(3)>a {width: 230px;background-position:0 -342px;}
