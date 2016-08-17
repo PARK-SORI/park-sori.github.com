@@ -1,0 +1,29 @@
+body,ul,li {margin: 0;padding: 0;}
+img {border:0 none;}
+ul {list-style: none;}
+
+/* gnb */
+.gnb ul {background-color: #0275f4;min-width: 320px;border-bottom: 3px solid #1B3259;}
+.gnb ul:after {content:"";display: block;clear: both;}
+.gnb ul li {float: left;width: 12.5%;text-align: center;}
+.gnb ul li a {display: block;color: #fff;text-decoration: none;padding:10px 0;letter-spacing: -1px;font-size:13px;font-weight: bold;
+	white-space: nowrap;/* wrapping해서 너비를 줄여도 사이즈가 모자라 밑으로 안떨어짐 모바일에서 많이씀 */}
+.gnb ul li.on a {border-bottom: 3px solid #fff;}
+
+/* g_slides */
+#gSlides {position: relative;}
+#gSlides a {position: absolute;display: block;width: 26px;height: 47px;background-image: url("../imgs/next.png");text-indent: -9999px;z-index: 500;}
+#gSlides a.slidesjs-previous {background-position: -422px 0;top:45%;left:93%;}
+#gSlides a.slidesjs-next {background-position: -422px -47px;top:45%;right:93%;}
+
+.slidesjs-pagination-item {display: none;}
+
+/* bnr */
+.bnr ul:after {content:""; display: block; clear: both;}
+/**
+ * .bnr li {float:left;width: 20%;}
+ * .bnr li img {width: 100%;} 
+ * 부모값의 20%를 전체다 상속받음 그래서 줄였을때 이미지가 안겹침 
+*/
+.bnr li {float:left;width: 20%;padding: 5px;box-sizing: border-box;}
+.bnr li img {width: 100%;}/* 박스사이징을주면 패딩을 뺀 나머지20%를 상속받음, 안그럼 20%+10px를 상속받음 */
