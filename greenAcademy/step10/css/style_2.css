@@ -43,18 +43,16 @@ css 작성순서
 #product .slidesjs-pagination li a {display: block;width: 14px;height: 14px;background-color: #ccc;border-radius: 7px;text-indent: -9999px;}
 #product .slidesjs-pagination li a.active {background-color: #3b78ce;}
 .slidesjs-navigation {display: none;}
+
 /* 미디어쿼리 */
 @media screen and (max-width:768px){
 	.center_align {width: 100%;}
 	.logo {float:none;}
 	.logo>a {width: 128px;height: 32px;background-position: -200px -10px;margin: 0 auto;}
 	#header_list {display: block;}
-	.gnb {display: none;}
-	.gnb_m{display: none;position: absolute;top: 54px;left: 0;width: 100%;/* 포지셔닝되면 w값은 사라지니깐 100%를 줌 */background-color: #3b78ce;z-index: 200;}
-	.gnb_m>ul>li>a {display: block;padding: 5px;color: #fff;}
-}
-@media screen and (min-width:769px){
-	.gnb_m {display:none;}
+	.gnb{margin: 0;display: none;position: absolute;top: 54px;left: 0;width: 100%;/* 포지셔닝되면 w값은 사라지니깐 100%를 줌 */background-color: #3b78ce;z-index: 200;}
+	.gnb>ul>li {float:none;}
+	.gnb>ul>li>a {display: block;padding: 5px;color: #fff;}
 }
 
 
